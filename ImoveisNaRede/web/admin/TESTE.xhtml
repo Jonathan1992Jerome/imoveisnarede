@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      >
+    
      <h:head>
-        <title>Tela de Login</title>
+        <title>Imóveis na Rede</title>
         <META charset="UTF-8"/>
         <link rel="stylesheet" href="biblio/bootstrap.min.css"/>
         <link rel="stylesheet" href="biblio/bootstrap-theme.min.css"/>
@@ -16,19 +18,19 @@
         
         <h:form id="Formulario" styleClass="form-control-static">
             <div id="Out1">
-            <h:outputLabel style="color: #eb9316"><h1>Login</h1></h:outputLabel>
-            <h:inputText/>
+            <h:outputLabel style="color:orange; "><h1>Login</h1></h:outputLabel>
             </div>
             <div id="Out2">
-            <h:outputLabel style="color: #eb9316"><h1>Senha</h1></h:outputLabel>
-            <h:inputText/>
+            <h:outputLabel style="color:orange;"><h1>Senha</h1></h:outputLabel>
+        
             </div>
             <div id="Botao1">
-            <h:commandButton styleClass="btn-success" value="Entrar"/>
+            <h:commandButton styleClass="btn-success" value="Entrar" type="submit"/>
             </div>
             <div id="Botao2">
             <h:commandButton styleClass="btn-danger" value="Cancelar" />
             </div>
+        
         </h:form>
         
         </div>

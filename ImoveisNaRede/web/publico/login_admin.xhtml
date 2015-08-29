@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+     <h:head>
+        <title>Imóveis na Rede</title>
+        <META charset="UTF-8"/>
+        <link rel="stylesheet" href="biblio/bootstrap.min.css"/>
+        <link rel="stylesheet" href="biblio/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="biblio/novacss.css"/>
+        <h:outputStylesheet library="biblio" name="novacss.css"/>
+        <h:outputStylesheet library="biblio" name="bootstrap-theme.min.css"/>
+        <h:outputStylesheet library="biblio" name="bootstrap.min.css"/>
+    </h:head>
+    
+    <h:body >
+        <div id="Menu">
+        <div id="Menu2">    
+        
+        <h:form id="Formulario" styleClass="form-control-static">
+            <div id="Out1">
+            <h:outputLabel style="color:orange; "><h1>Login</h1></h:outputLabel>
+            <input type="text" class="login-field" name="j_username"/>
+            </div>
+            <div id="Out2">
+            <h:outputLabel style="color:orange;"><h1>Senha</h1></h:outputLabel>
+            <input type="password" name="j_password"/>
+            </div>
+            <div id="Botao1">
+            <h:commandButton styleClass="btn-success" value="Entrar" type="submit"/>
+            </div>
+            <div id="Botao2">
+            <h:commandButton styleClass="btn-danger" value="Cancelar" />
+            </div>
+            <script>
+                document.getElementById("login").j_username.value= "#{SPRING_SECUTIRY_LAST_USERNAME}";
+            </script>
+        </h:form>
+        
+        </div>
+        </div>    
+    </h:body>
+</html>
+

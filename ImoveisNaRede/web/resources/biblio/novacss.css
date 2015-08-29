@@ -9,29 +9,27 @@ and open the template in the editor.
 */
 
 body{
-   
+ background: #f5e79e;  
 }
 
 #Botao1{
-   margin-top: 10px;
+   margin-top: 15px;
    margin-left: 90px;
  
 }
 
 #Botao2{
    margin-left: 165px;
-   margin-top: -26px;
+   margin-top: -21px;
 }
 
-#Menu{
-      
+#Menu{     
    margin-left:200px;
    width: 50%;
    height: 200px;
 }
 
-#Menu2{
-       
+#Menu2{       
     margin-left: 300px;
     width: 50%;
     height: 200px;
@@ -39,7 +37,7 @@ body{
 }
 
 #Formulario{
-    background:#985f0d; 
+    background:ghostwhite; 
     border: solid thick gray;
     border-radius: 1em;
     box-shadow: black 0.5em 0.5em 0.3em;
@@ -47,10 +45,11 @@ body{
 
 #Out1{
     padding:10px 10px 10px 10px;
-    margin-left:5px; 
-        
+    margin-left:40px;
+           
 }
 
 #Out2{
-    margin-top:-30px;
-}
+    margin-top:-25px;
+    padding:10px 10px 10px 50px;
+   }
