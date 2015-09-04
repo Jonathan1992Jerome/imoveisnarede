@@ -13,7 +13,7 @@
         <h:outputStylesheet library="biblio" name="bootstrap.min.css"/>
     </h:head>
     
-    <h:body >
+    <h:body id="Body">
         <div id="Menu">
         <div id="Menu2">    
         
@@ -27,10 +27,10 @@
             <input type="password" name="j_password"/>
             </div>
             <div id="Botao1">
-            <h:commandButton styleClass="btn-success" value="Entrar" type="submit"/>
+            <h:commandButton styleClass="btn btn-success" value="Entrar" type="submit"/>
             </div>
             <div id="Botao2">
-            <h:commandButton styleClass="btn-danger" value="Cancelar" />
+            <h:commandButton styleClass="btn btn-danger" value="Cancelar" />
             </div>
             <script>
                 document.getElementById("login").j_username.value= "#{SPRING_SECUTIRY_LAST_USERNAME}";

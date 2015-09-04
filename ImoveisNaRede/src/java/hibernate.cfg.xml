@@ -9,5 +9,8 @@
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.format_sql">true</property>
     <property name="hibernate.show_sql">true</property>
+    <mapping class="br.com.hibernate.entity.Imovel"/>
+    <mapping class="br.com.hibernate.entity.Proprietario"/>
+    <mapping class="br.com.hibernate.entity.Visita"/>
   </session-factory>
 </hibernate-configuration>

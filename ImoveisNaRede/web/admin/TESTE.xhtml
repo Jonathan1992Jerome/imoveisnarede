@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      >
+          
+      xmlns:p="http://primefaces.org/ui">
     
      <h:head>
         <title>Imóveis na Rede</title>
@@ -22,13 +23,13 @@
             </div>
             <div id="Out2">
             <h:outputLabel style="color:orange;"><h1>Senha</h1></h:outputLabel>
-        
+            <p:inputText value="#{imovelBEAN.cadastrarImovel()}"  />
             </div>
             <div id="Botao1">
             <h:commandButton styleClass="btn-success" value="Entrar" type="submit"/>
             </div>
             <div id="Botao2">
-            <h:commandButton styleClass="btn-danger" value="Cancelar" />
+                <h:commandButton styleClass="btn-danger" value="Cancelar" actionListener="#{imovelBEAN.acessTela()}" />
             </div>
         
         </h:form>
